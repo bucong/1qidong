@@ -1,0 +1,141 @@
+//小于400px
+@media all and (max-width: 400px) { 
+    .modal-dialog.user-info .modal-body form .remarks textarea {
+      width: 180px;
+    }
+    .activity .title .name span{
+        display: none;
+    }
+}
+@media all and (max-width: 542px) { 
+    .supplier-detail .club-detail .club-contact li:last-child{
+        width: 100%;
+        height: auto;
+    }
+}
+// 小屏幕（平板，小于等于 768px）
+@media all and (min-width: 401px) and (max-width: 768px) { 
+    .modal-dialog.user-info .modal-body form .remarks textarea {
+      width: 266px;
+    }
+    .modal-dialog.user-info .modal-body form .sub span{
+        display: none;
+    }
+}
+@media all and (max-width: 768px){
+    header #coll ul{
+        display: block;
+        li{
+            a{
+                line-height: 42px;
+            }
+        }
+    }
+    header .logo .city{
+        max-width: 320px;
+        left: 0;
+    }
+    .modal-dialog.user-info{
+        margin: 60px auto;
+    }
+    .index .index-news .news-content{
+        p{
+            display: none;
+        }
+        h5,span{
+            width: 50%;
+        }
+    }
+    .side{
+        .pc{
+            display: none;
+        }
+        .mobile{
+            display: flex;
+        }
+    }
+    .modal-dialog.user-info .modal-body form ul li:nth-child(2n-1) {
+      margin-right: 0;
+    }
+    .activity .activity-list:hover .carousel .carousel-control .fa{
+        font-size: 20px;
+    }
+    .activity-detail .tag .carousel .detail{
+        padding: 5px;
+        .carousel-indicators li{
+            margin: 0 2px;
+        }
+        
+    }
+    .supplier-detail .team-list figure{
+        div,figcaption{
+            float: none;
+            width: 100%;
+        }
+    }
+}
+//中等屏幕（桌面显示器，小于等于 992px） 
+@media all and (min-width: 767px) and (max-width: 992px) { 
+    .index .index-news .news-content{
+        span{
+            width: 20%;
+        }
+        p{
+            width: 60%;
+        }
+    }
+}
+@media all and (max-width: 992px){
+    header #coll ul li a{
+        padding: 0 19px;
+    }
+    .activity .title .content a{
+        margin: 0;
+    }
+    .detail-foot .row{
+        .content{
+            margin: 0 auto;
+        }
+        .foot-left{
+            border-right: none;
+        }
+        .right{
+            float: none;
+        }
+    }
+}
+@media all and (min-width: 767px) and (max-width: 1200px) { 
+    .activity .activity-list .detail{
+        h4{
+            margin: 10px 0 5px;
+        }
+        ul{
+            margin: 10px 0;
+        }
+        .more{
+            margin: 0;
+        }
+    }
+}
+// 大屏幕（大桌面显示器，大于等于 1200px）
+@media all and (min-width: 993px) and (max-width: 1200px) { 
+    
+}
+@media all and (max-width: 1200px){
+    .side .pc li{
+        width: 146px;
+    }
+}
+@media all and (max-width: 1300px){
+    .activity-detail .tag .carousel{
+        .carousel-control span{
+            color: #fff;
+        }
+        .left{
+            left: 0;
+        }
+        .right{
+            right: 0;
+        }
+    }
+}

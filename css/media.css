@@ -1,0 +1,119 @@
+@media all and (max-width: 400px) {
+  .modal-dialog.user-info .modal-body form .remarks textarea {
+    width: 180px;
+  }
+  .activity .title .name span {
+    display: none;
+  }
+}
+@media all and (max-width: 542px) {
+  .supplier-detail .club-detail .club-contact li:last-child {
+    width: 100%;
+    height: auto;
+  }
+}
+@media all and (min-width: 401px) and (max-width: 768px) {
+  .modal-dialog.user-info .modal-body form .remarks textarea {
+    width: 266px;
+  }
+  .modal-dialog.user-info .modal-body form .sub span {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  header #coll ul {
+    display: block;
+  }
+  header #coll ul li a {
+    line-height: 42px;
+  }
+  header .logo .city {
+    max-width: 320px;
+    left: 0;
+  }
+  .modal-dialog.user-info {
+    margin: 60px auto;
+  }
+  .index .index-news .news-content p {
+    display: none;
+  }
+  .index .index-news .news-content h5,
+  .index .index-news .news-content span {
+    width: 50%;
+  }
+  .side .pc {
+    display: none;
+  }
+  .side .mobile {
+    display: flex;
+  }
+  .modal-dialog.user-info .modal-body form ul li:nth-child(2n-1) {
+    margin-right: 0;
+  }
+  .activity .activity-list:hover .carousel .carousel-control .fa {
+    font-size: 20px;
+  }
+  .activity-detail .tag .carousel .detail {
+    padding: 5px;
+  }
+  .activity-detail .tag .carousel .detail .carousel-indicators li {
+    margin: 0 2px;
+  }
+  .supplier-detail .team-list figure div,
+  .supplier-detail .team-list figure figcaption {
+    float: none;
+    width: 100%;
+  }
+}
+@media all and (min-width: 767px) and (max-width: 992px) {
+  .index .index-news .news-content span {
+    width: 20%;
+  }
+  .index .index-news .news-content p {
+    width: 60%;
+  }
+}
+@media all and (max-width: 992px) {
+  header #coll ul li a {
+    padding: 0 19px;
+  }
+  .activity .title .content a {
+    margin: 0;
+  }
+  .detail-foot .row .content {
+    margin: 0 auto;
+  }
+  .detail-foot .row .foot-left {
+    border-right: none;
+  }
+  .detail-foot .row .right {
+    float: none;
+  }
+}
+@media all and (min-width: 767px) and (max-width: 1200px) {
+  .activity .activity-list .detail h4 {
+    margin: 10px 0 5px;
+  }
+  .activity .activity-list .detail ul {
+    margin: 10px 0;
+  }
+  .activity .activity-list .detail .more {
+    margin: 0;
+  }
+}
+@media all and (max-width: 1200px) {
+  .side .pc li {
+    width: 146px;
+  }
+}
+@media all and (max-width: 1300px) {
+  .activity-detail .tag .carousel .carousel-control span {
+    color: #fff;
+  }
+  .activity-detail .tag .carousel .left {
+    left: 0;
+  }
+  .activity-detail .tag .carousel .right {
+    right: 0;
+  }
+}
