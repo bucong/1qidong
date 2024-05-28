@@ -148,20 +148,11 @@
         <a href="${bokeDomain + data[i]}" id="a${i}" target="rightMain">boke</a>
       </li>`
   }
-  $('.a-list').html(str);
-  let i = 0;
-  let count = 0;
-  let time = null;
+  $('.a-list').html(str)
   time = setInterval(function(){
-    document.getElementById('a' + i).click()
-    i ++
-    if(i >= data.length){
-      count ++
-      i = 0
-      if(count >= 10){
-        clearInterval(time)
-      }
-    }
+    const randomNum = Math.round(Math.random() * data.length)
+    console.log(randomNum)
+    document.getElementById('a' + randomNum).click()
   }, 3000)
 </script>
 </html>
