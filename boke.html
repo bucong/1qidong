@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="https://g.csdnimg.cn/static/logo/favicon32.ico" type="image/x-icon">
+  <title>不求甚解的博客</title>
+  <style>
+    body{margin: 0}
+  </style>
+</head>
+<body>
+  <div>
+    <ul class="a-list" style="display: none">
+      <li>
+        <a href="" target="rightMain">boke</a>
+      </li>
+    </ul>
+    <div>
+        <iframe name="rightMain" id="rightMain" src="https://blog.csdn.net/bocongbo" frameborder="false" scrolling="auto" width="100%" height="800px"></iframe>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+<script>
+  let iframeHeight = document.documentElement.clientHeight - 6;
+  $('#rightMain').height(iframeHeight);
+  let bokeDomain = 'https://blog.csdn.net/bocongbo/article/details/';
+  let data = [
+    '137787698',
+    '135975602',
+    '135846505',
+    '135672156',
+    '135528755',
+    '135268938',
+    '135227673',
+    '135194760',
+    '135128920',
+    '134969821',
+    '134953928',
+    '134947097',
+    '131414597',
+    '131183753',
+    '131048017',
+    '131009669',
+    '130702292',
+    '130689291',
+    '130402392',
+    '130239596',
+    '130135399',
+    '130134400',
+    '129424492',
+    '125166847',
+    '124148183',
+    '124074428',
+    '123252791',
+    '123186916',
+    '122212985',
+    '122130925',
+    '120195527',
+    '119177895',
+    '119177566',
+    '119175077',
+    '118362609',
+    '117558114',
+    '117512792',
+    '117512221',
+    '117511674',
+    '117476841',
+    '116661862',
+    '115911020',
+    '115909427',
+    '115524900',
+    '115397070',
+    '115012451',
+    '114324568',
+    '114089912',
+    '113866619',
+    '113045967',
+    '113037328',
+    '112954222',
+    '112844233',
+    '110447437',
+    '110431964',
+    '108477299',
+    '104773028',
+    '103329899',
+    '103889813',
+    '104632968',
+    '104654091',
+    '102677987',
+    '101124161',
+    '101001439',
+    '100529922',
+    '99686740',
+    '97425759',
+    '95732248',
+    '95459888',
+    '93719624',
+    '88183865',
+    '86743307',
+    '86625651',
+    '86132942',
+    '85273255',
+    '84934973',
+    '84102052',
+    '84065418',
+    '84061110',
+    '83957206',
+    '83897566',
+    '83863304',
+    '83788950',
+    '83656754',
+    '83656506',
+    '83088147',
+    '83087775',
+    '83084747',
+    '82998943',
+    '82876348',
+    '82686222',
+    '82665586',
+    '82588307',
+    '81772635',
+    '81772388',
+    '81772157',
+    '81771985',
+    '81746633',
+    '81703316',
+    '81702036',
+    '81701994',
+    '81701615',
+    '81701213',
+    '81700843',
+    '81700502',
+    '81698121',
+    '81670794',
+    '81670072',
+    '81668416',
+    '81667054',
+    '77991066',
+    '73920925'
+  ];
+  console.log(`一共有${ data.length }篇文章`)
+  let str = ''
+  for(let i = 0; i < data.length; i ++){
+    str += `<li>
+        <a href="${bokeDomain + data[i]}" id="a${i}" target="rightMain">boke</a>
+      </li>`
+  }
+  $('.a-list').html(str);
+  let i = 0;
+  let count = 0;
+  let time = null;
+  time = setInterval(function(){
+    document.getElementById('a' + i).click()
+    i ++
+    if(i >= data.length){
+      count ++
+      i = 0
+      if(count >= 10){
+        clearInterval(time)
+      }
+    }
+  }, 3000)
+</script>
+</html>
